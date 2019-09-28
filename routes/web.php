@@ -12,7 +12,13 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth/login');
 });
 
 Route::resource('almacen/categoria','CategoriaController');
+
+Route::auth();
+Auth::routes();
+Route::get('/logout', 'Auth\LoginController@logout')->name('logout' );
+
+Route::get('/home', 'HomeController@index')->name('home');

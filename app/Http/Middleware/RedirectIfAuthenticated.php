@@ -1,6 +1,6 @@
 <?php
 
-namespace sisVentas\Http\Middleware;
+namespace sisGoTrade\Http\Middleware;
 
 use Closure;
 use Illuminate\Support\Facades\Auth;

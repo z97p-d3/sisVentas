@@ -1,6 +1,6 @@
 <?php
 
-namespace sisVentas\Http\Requests;
+namespace sisGoTrade\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 

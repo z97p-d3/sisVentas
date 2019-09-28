@@ -1,6 +1,6 @@
 <?php
 
-namespace sisVentas\Http\Middleware;
+namespace sisGoTrade\Http\Middleware;
 
 use Illuminate\Http\Request;
 use Fideloper\Proxy\TrustProxies as Middleware;

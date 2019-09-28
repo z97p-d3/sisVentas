@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'GoTrade sistema'),
 
     /*
     |--------------------------------------------------------------------------
@@ -154,11 +154,11 @@ return [
         /*
          * Application Service Providers...
          */
-        sisVentas\Providers\AppServiceProvider::class,
-        sisVentas\Providers\AuthServiceProvider::class,
-        // sisVentas\Providers\BroadcastServiceProvider::class,
-        sisVentas\Providers\EventServiceProvider::class,
-        sisVentas\Providers\RouteServiceProvider::class,
+        sisGoTrade\Providers\AppServiceProvider::class,
+        sisGoTrade\Providers\AuthServiceProvider::class,
+        // sisGoTrade\Providers\BroadcastServiceProvider::class,
+        sisGoTrade\Providers\EventServiceProvider::class,
+        sisGoTrade\Providers\RouteServiceProvider::class,
 		Collective\Html\HtmlServiceProvider::class,
 
     ],

@@ -1,4 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic);
+/*@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic);*/
+@import url(https://fonts.googleapis.com/css?family=Rasa&display=swap);
+
 /*!
  *   AdminLTE v2.3.0
  *   Author: Almsaeed Studio
@@ -21,10 +23,11 @@ body {
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Rasa', serif;
   font-weight: 400;
   overflow-x: hidden;
   overflow-y: auto;
+	color: rgb(219, 143, 51);
 }
 /* Layout */
 .wrapper {
@@ -167,7 +170,7 @@ h6,
 }
 /* General Links */
 a {
-  color: #3c8dbc;
+  color: rgb(219, 143, 51);
 }
 a:hover,
 a:active,

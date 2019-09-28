@@ -3,17 +3,16 @@
 namespace sisGoTrade\Http\Controllers;
 
 use Illuminate\Http\Request;
-
-use sisGoTrade\Http\Requests;
-use sisGoTrade\Categoria;
+use sisGoTrade\articulo;
 use Illuminate\Support\Facades\Redirect;
-use sisGoTrade\Http\Requests\CategoriaFormRequest;
+use Illuminate\Support\Facades\Input;
+use sisGoTrade\Http\Requests\ArticuloFormRequest;
 use DB;
 
-class CategoriaController extends Controller {
-	public
+class articuloController extends Controller
+{
+    public
 	function __construct() {
-		$this->middleware('auth');
 
 
 	}
@@ -22,19 +21,22 @@ class CategoriaController extends Controller {
 		if($request){
 			
 			$query = trim($request->get('searchText')); //para realizar busquedas
-			$categorias=DB::table('categoria')//especificar la tabla y realiza un select sql en categoria
-				->where('nombre','LIKE','%'. $query.'%')
-				->where ('condicion','=', '1')
-				->orderBy ('idcategoria', 'desc')
+			$articulo=DB::table('articulo as a')//especificar la tabla y realiza un select sql en categoria
+				->join('categoria as c','a.idcategoria','=','c.idcategoria')
+				->select('a.idarticulo','a.nombre','a.codigo','a.stock','c.nombre as categoria','a.descripcion','a.imagen','a.estado')
+				->where('a.nombre','LIKE','%'. $query.'%')
+				->orderBy ('a.idarticulo', 'desc')
 				->paginate(7);
-			return view('almacen.categoria.index',["categorias"=>$categorias, "searchText"=> $query]);
+			return view('almacen.articulo.index',["articulos"=>$articulo, "searchText"=> $query]);
+			
 			
 		}
 
 	}
 	public
 	function create() {
-		return view ("almacen.categoria.create");
+		$categorias=DB::table('categoria')->where('condicion','=','1')->get();
+		return view("almacen.articulo.create", ["categorias"=>$categorias]);
 
 	}
 	public

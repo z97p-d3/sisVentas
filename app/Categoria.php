@@ -1,6 +1,6 @@
 <?php
 
-namespace sisVentas;
+namespace sisGoTrade;
 
 use Illuminate\Database\Eloquent\Model;
 

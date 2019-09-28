@@ -1,6 +1,6 @@
 <?php
 
-namespace sisVentas\Exceptions;
+namespace sisGoTrade\Exceptions;
 
 use Exception;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;

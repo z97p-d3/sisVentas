@@ -1,9 +1,9 @@
 <?php
 
-namespace sisVentas\Http\Controllers\Auth;
+namespace sisGoTrade\Http\Controllers\Auth;
 
-use sisVentas\User;
-use sisVentas\Http\Controllers\Controller;
+use sisGoTrade\User;
+use sisGoTrade\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
@@ -28,7 +28,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/';
 
     /**
      * Create a new controller instance.
@@ -59,7 +59,7 @@ class RegisterController extends Controller
      * Create a new user instance after a valid registration.
      *
      * @param  array  $data
-     * @return \sisVentas\User
+     * @return \sisGoTrade\User
      */
     protected function create(array $data)
     {
@@ -69,4 +69,9 @@ class RegisterController extends Controller
             'password' => Hash::make($data['password']),
         ]);
     }
+/*	public function showRegistrationForm(){
+		
+		return redirect('login');
+	}*/
+
 }

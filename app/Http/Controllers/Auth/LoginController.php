@@ -1,8 +1,8 @@
 <?php
 
-namespace sisVentas\Http\Controllers\Auth;
+namespace sisGoTrade\Http\Controllers\Auth;
 
-use sisVentas\Http\Controllers\Controller;
+use sisGoTrade\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
 class LoginController extends Controller
@@ -25,7 +25,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/almacen/categoria';
 
     /**
      * Create a new controller instance.
