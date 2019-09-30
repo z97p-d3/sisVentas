@@ -14,10 +14,14 @@
 Route::get('/', function () {
     return view('auth/login');
 });
-
-Route::resource('almacen/categoria','CategoriaController');
-
 Route::auth();
+Route::resource('almacen/categoria','CategoriaController');
+Route::resource('almacen/articulo','articuloController');
+Route::resource('almacen/reporte','reporteController');
+Route::resource('almacen/indice','inicioController');
+
+
+
 Auth::routes();
 Route::get('/logout', 'Auth\LoginController@logout')->name('logout' );
 

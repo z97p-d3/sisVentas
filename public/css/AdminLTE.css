@@ -12,6 +12,8 @@
  * Core: General Layout Style
  * -------------------------
  */
+
+
 html,
 body {
   min-height: 100%;
@@ -52,6 +54,10 @@ body {
 }
 .layout-boxed {
   background: url('../img/boxed-bg.jpg') repeat fixed;
+}
+
+#animar{
+	display: none;
 }
 /*
  * Content Wrapper - contains the main content

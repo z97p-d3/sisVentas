@@ -11,14 +11,21 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="{{asset('css/font-awesome.css')}}">
     <!-- Theme style -->
+	    <link rel="stylesheet" href="{{asset('css/estilos.css')}}">
     <link rel="stylesheet" href="{{asset('css/AdminLTE.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/AdminLTE.css')}}">
+   
     <!-- AdminLTE Skins. Choose a skin from the css/skins
          folder instead of downloading all of them to reduce the load. -->
 <!--   <link rel="stylesheet" href="{{asset('css/_all-skins.min.css')}}">
     <link rel="apple-touch-icon" href="{{asset('img/apple-touch-icon.png')}}">
     <link rel="shortcut icon" href="{{asset('img/favicon.ico')}}">-->
-
+<script type="text/javascript">
+	  
+ 
+		  
+		  
+	  </script>
   </head>
   <body class="hold-transition skin-blue sidebar-mini">
     <div class="wrapper">
@@ -26,9 +33,9 @@
       <header class="main-header">
 
         <!-- Logo -->
-        <a href="index2.html" class="logo bg-light">
+        <a href="{{asset('almacen/indice')}}" class="logo bg-light">
           <!-- mini logo for sidebar mini 50x50 pixels -->
-          <span class="logo-mini"><b>AD</b>V</span>
+          <span class="logo-mini"><b>G</b>T</span>
           <!-- logo for regular state and mobile devices -->
           <span class="logo-lg"><b>Go Trade</b></span>
         </a>
@@ -94,7 +101,7 @@
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href=""><i class="fa fa-circle-o"></i> Artículos</a></li>
+                <li><a href="{{url('almacen/articulo')}}"><i class="fa fa-circle-o"></i> Artículos</a></li>
                 <li><a href="{{url('almacen/categoria')}}"><i class="fa fa-circle-o"></i> Categorías</a></li>
               </ul>
             </li>
@@ -121,17 +128,20 @@
                 <li><a href="ventas/cliente"><i class="fa fa-circle-o"></i> Clientes</a></li>
               </ul>
             </li>
-                       
-            <li class="treeview">
+			  
+			       <li class="treeview">
               <a href="#">
-                <i class="fa fa-folder"></i> <span>Acceso</span>
-                <i class="fa fa-angle-left pull-right"></i>
+                <i class="fa fa-shopping-cart"></i>
+                <span>Reportes</span>
+                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="configuracion/usuario"><i class="fa fa-circle-o"></i> Usuarios</a></li>
-                
+                <li><a href="{{url('almacen/reporte')}}"><i class="fa fa-circle-o"></i> Ventas</a></li>
+               
               </ul>
             </li>
+                       
+   
        
        
                         
@@ -193,9 +203,17 @@
     <!-- jQuery 2.1.4 -->
     <script src="{{asset('js/jquery-3.3.1.js')}}"></script>
     <!-- Bootstrap 3.3.5 -->
-    <script src="{{asset('js/bootstrap.min.js')}}"></script>
+ 	   <script src="{{asset('js/bootstrap.min.js')}}"></script>
+   <!-- <script src="{{asset('js/archivos modificados/highcharts.js')}}"></script>-->
+	<script src="{{asset('https://www.gstatic.com/charts/loader.js')}}"></script>
+<!--<script src="{{asset('https://code.highcharts.com/modules/exporting.js')}}"></script>
+<script src="{{asset('https://code.highcharts.com/modules/export-data.js')}}"></script>-->
+	  <script src="{{asset('js/archivos modificados/graficas.js')}}"></script>
+	  <script src="{{asset('js/archivos modificados/theme.js')}}"></script>
+
     <!-- AdminLTE App -->
     <script src="{{asset('js/app.min.js')}}"></script>
+    <script src="{{asset('js/estilos.js')}}"></script>
     
   </body>
 </html>
