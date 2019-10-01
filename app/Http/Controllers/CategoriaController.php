@@ -24,6 +24,7 @@ class CategoriaController extends Controller {
 			$query = trim($request->get('searchText')); //para realizar busquedas
 			$categorias=DB::table('categoria')//especificar la tabla y realiza un select sql en categoria
 				->where('nombre','LIKE','%'. $query.'%')
+				->orwhere('idcategoria','LIKE','%'. $query.'%')
 				->where ('condicion','=', '1')
 				->orderBy ('idcategoria', 'desc')
 				->paginate(7);

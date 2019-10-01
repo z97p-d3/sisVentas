@@ -82,7 +82,7 @@
 			<input type="file" name="imagen" class="form-control">
 			
 			@if(($articulo->imagen)!="")
-			<img src="/storage/{{$articulo->imagen}}" height="300px"  width="300px">
+			<img src="{{$articulo->imagen}}" height="300px"  width="300px">
 			@endif
 		</div>
 	</div>

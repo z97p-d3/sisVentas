@@ -6,11 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class reporte extends Model
 {
-       protected $table ='articulo';
-	protected $primaryKey='idarticulo';
+       protected $table ='users';
+	protected $primaryKey='id';
 	
 	public $timestamps= false;
-	protected $fillable=['idcategoria','codigo', 'nombre', 'stock','descripcion', 'imagen', 'estado'];
+	protected $fillable=['name','email', 'password', 'remember_token','create_at', 'update_at'];
 	
 	protected $guarded=[];
 }
