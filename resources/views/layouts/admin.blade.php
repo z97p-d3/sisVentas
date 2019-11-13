@@ -122,7 +122,7 @@
 						<ul class="treeview-menu bg-light">
 							<li><a href="ventas/venta"><i class="fa fa-circle-o"></i> Ventas</a>
 							</li>
-							<li><a href="ventas/cliente"><i class="fa fa-circle-o"></i> Clientes</a>
+							<li><a href="{{url('ventas/cliente')}}"><i class="fa fa-circle-o"></i> Clientes</a>
 							</li>
 						</ul>
 					</li>
@@ -210,10 +210,23 @@
 	<script src="{{asset('js/jquery-3.3.1.js')}}"></script>
 	<!-- Bootstrap 3.3.5 -->
 	<script src="{{asset('js/bootstrap.min.js')}}"></script>
+	
+	
+	
+	
 
 	<!-- AdminLTE App -->
+	
+	
 	<script src="{{asset('js/app.min.js')}}"></script>
 	<script src="{{asset('js/estilos.js')}}"></script>
 
+	
+
+
+
+	<script src="{{asset('js/chart.js')}}"></script>
+	
+		
 </body>
 </html>

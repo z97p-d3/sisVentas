@@ -3,7 +3,6 @@
 namespace sisGoTrade\Http\Controllers;
 
 use Illuminate\Http\Request;
-
 use sisGoTrade\Http\Requests;
 use sisGoTrade\Categoria;
 use Illuminate\Support\Facades\Redirect;

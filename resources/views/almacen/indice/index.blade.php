@@ -8,7 +8,7 @@
   <div class="col-lg-12 clo-md-12 col-12">
 	
 <!-- Flexbox container for aligning the toasts -->
-<div aria-live="polite" aria-atomic="true" class="d-flex justify-content-center align-items-center bg-dark" style="min-height: 200px;">
+<div id="empresa" aria-live="polite" aria-atomic="true" class="d-flex justify-content-center align-items-center back" style="min-height: 200px;">
 
   <!-- Then put toasts within -->
   <div class="toast " role="alert" aria-live="assertive" aria-atomic="true" id="animar">

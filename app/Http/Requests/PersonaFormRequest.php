@@ -3,9 +3,8 @@
 namespace sisGoTrade\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
-use sisGoTrade\Http\Requests\Request;
 
-class articuloFormRequest extends FormRequest
+class PersonaFormRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -25,12 +24,14 @@ class articuloFormRequest extends FormRequest
     public function rules()
     {
         return [
-            'idcategoria'=> 'required',
-			'codigo'=> 'required|max:50',
-			'nombre'=> 'required|max:100',
-			'stock'=>'required|numeric',
-			'descripcion'=> 'max:512',
-			'imagen' =>' required|mimes:jpeg,jpg,png'
+            'nombre'=> 'required|max:100',
+			'tipo_documento'=>'required|max:100',
+			'num_documento'=>'required|max:15',
+			'direccion'=>'required|max:70',
+			'telefono'=>'required|max:15',
+			'email'=>'required|max:50'
+			
+			
         ];
     }
 }
