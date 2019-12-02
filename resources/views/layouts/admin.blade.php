@@ -108,7 +108,7 @@
 						<ul class="treeview-menu bg-light">
 							<li><a href="compras/ingreso"><i class="fa fa-circle-o"></i> Ingresos</a>
 							</li>
-							<li><a href="compras/proveedor"><i class="fa fa-circle-o"></i> Proveedores</a>
+							<li><a href="{{url('compras/proveedor')}}"><i class="fa fa-circle-o"></i> Proveedores</a>
 							</li>
 						</ul>
 					</li>
