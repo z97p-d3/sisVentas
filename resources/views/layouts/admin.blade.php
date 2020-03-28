@@ -14,6 +14,9 @@
 	<link rel="stylesheet" href="{{asset('css/estilos.css')}}">
 	<link rel="stylesheet" href="{{asset('css/AdminLTE.min.css')}}">
 	<link rel="stylesheet" href="{{asset('css/AdminLTE.css')}}">
+	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+	
+
 </head>
 
 <body class="hold-transition  sidebar-mini">
@@ -106,7 +109,7 @@
               </a>
 					
 						<ul class="treeview-menu bg-light">
-							<li><a href="compras/ingreso"><i class="fa fa-circle-o"></i> Ingresos</a>
+							<li><a href="{{url('compras/ingresos')}}"><i class="fa fa-circle-o"></i> Ingresos</a>
 							</li>
 							<li><a href="{{url('compras/proveedor')}}"><i class="fa fa-circle-o"></i> Proveedores</a>
 							</li>
@@ -208,6 +211,8 @@
 
 	<!-- jQuery 3.3.1 -->
 	<script src="{{asset('js/jquery-3.3.1.js')}}"></script>
+@stack('script');
+
 	<!-- Bootstrap 3.3.5 -->
 	<script src="{{asset('js/bootstrap.min.js')}}"></script>
 	
@@ -226,6 +231,7 @@
 
 
 	<script src="{{asset('js/chart.js')}}"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	
 		
 </body>

@@ -1,13 +1,13 @@
 <?php
 
-namespace sisGoTrade\ Http\ Controllers;
+namespace sisGoTrade\Http\Controllers;
 
-use Illuminate\ Http\ Request;
-use sisGoTrade\ articulo;
-use Illuminate\ Support\ Facades\ Redirect;
-use Illuminate\ Support\ Facades\ Input;
+use Illuminate\Http\Request;
+use sisGoTrade\articulo;
+use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Input;
 use Image;
-use sisGoTrade\ Http\ Requests\ articuloFormRequest;
+use sisGoTrade\Http\Requests\articuloFormRequest;
 use DB;
 
 class articuloController extends Controller {
